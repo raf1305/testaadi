@@ -7,5 +7,10 @@
 </head>
 <body>
     <h2>Welcome to Session Detail</h2>
+    <ol>
+        {% for choice in sessions.session_set.all %}
+        <li>{{choice.Title}}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>

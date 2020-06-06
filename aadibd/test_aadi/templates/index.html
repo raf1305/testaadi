@@ -11,7 +11,7 @@
         <ol>
             {% for interview in interviews %}
             
-            <li><a href="{% url 'music:detail' album.pk %}">
+            <li><a href="{% url 'test_aadi:sessiondetail' interview.pk %}">
                 <ul style="list-style: none;">
                     <li>{{ interview.Title }}</li>
                     <li>{{ interview.Date }}</li>

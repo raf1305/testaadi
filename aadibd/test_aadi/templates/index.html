@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interview Details</title>
 </head>
 <body>
     <h1 style="text-align: center;">Welcome to the Interview Application</h1>
@@ -22,5 +22,6 @@
     {% else %}
         <h3>Nothing Added Yet</h3>
     {% endif %}
+    <a href="{% url 'test_aadi:interview-add' %}"> <button>Add Interview</button> </a>
 </body>
 </html>

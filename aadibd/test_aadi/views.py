@@ -12,3 +12,7 @@ class SessionDetailView(generic.DetailView):
     model=Interview
     context_object_name='sessions'
     template_name='session_detail.html'
+class InterviewCreate(CreateView):
+    model=Interview
+    fields=['Title','Date']
+    template_name='interviewform.html'

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to the Interview Application</h1>
+    {% if interviews %}
+        <ol>
+            {% for interview in interviews %}
+            
+            <li><a href="{% url 'music:detail' album.pk %}">
+                <ul style="list-style: none;">
+                    <li>{{ interview.Title }}</li>
+                    <li>{{ interview.Date }}</li>
+                </ul>
+            </a> </li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <h3>Nothing Added Yet</h3>
+    {% endif %}
+</body>
+</html>
